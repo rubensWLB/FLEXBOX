@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundamentos - align content</title>
+
+    <style>
+
+        .container{
+            height: 350px;
+            max-width: 300px;
+            display: flex;
+            flex-wrap: wrap;
+            border: 1px solid black;
+        }
+
+        .item{
+            background-color: orangered;
+            padding: 0 5px;
+            margin: 5px;
+            flex: 1;
+            text-align: center;
+            color: white;
+        }
+
+        .stretch{
+            align-content: stretch;
+        }
+
+        .center{
+            align-content: center;
+        }
+
+        .start{
+            align-content: flex-start;
+        }
+
+        .end{
+            align-content: flex-end;
+        }
+
+        .around{
+            align-content: space-around;
+        }
+
+        .between{
+            align-content: space-between;
+        }
+
+    </style>
+</head>
+<body>
+
+    <p>stretch</p>
+
+    <div class="container stretch">
+        <div class="item">Help people interested in this repository understand your project by adding a README.</div>
+        <div class="item">Help people interested in this repository understand your </div>
+        <div class="item">Help people interested inadding a README.</div>
+        <div class="item">Help peop</div>
+        <div class="item">Help people nd your project by adding a README.</div>
+        <div class="item">Help peoplg a README.</div>
+        <div class="item">Help people i by adding a README.</div>
+    </div>
+
+    <p>center</p>
+
+    <div class="container center">
+        <div class="item">Help people interested in this repository understand your project by adding a README.</div>
+        <div class="item">Help people interested in this repository understand your </div>
+        <div class="item">Help people interested inadding a README.</div>
+        <div class="item">Help peop</div>
+        <div class="item">Help people nd your project by adding a README.</div>
+        <div class="item">Help peoplg a README.</div>
+        <div class="item">Help people i by adding a README.</div>
+    </div>
+
+    <p>start</p>
+
+    <div class="container center start">
+        <div class="item">Help people interested in this repository understand your project by adding a README.</div>
+        <div class="item">Help people interested in this repository understand your </div>
+        <div class="item">Help people interested inadding a README.</div>
+        <div class="item">Help peop</div>
+        <div class="item">Help people nd your project by adding a README.</div>
+        <div class="item">Help peoplg a README.</div>
+        <div class="item">Help people i by adding a README.</div>
+    </div>
+
+    <p>end</p>
+
+    <div class="container center end">
+        <div class="item">Help people interested in this repository understand your project by adding a README.</div>
+        <div class="item">Help people interested in this repository understand your </div>
+        <div class="item">Help people interested inadding a README.</div>
+        <div class="item">Help peop</div>
+        <div class="item">Help people nd your project by adding a README.</div>
+        <div class="item">Help peoplg a README.</div>
+        <div class="item">Help people i by adding a README.</div>
+    </div>
+
+    <p>around</p>
+
+    <div class="container center around">
+        <div class="item">Help people interested in this repository understand your project by adding a README.</div>
+        <div class="item">Help people interested in this repository understand your </div>
+        <div class="item">Help people interested inadding a README.</div>
+        <div class="item">Help peop</div>
+        <div class="item">Help people nd your project by adding a README.</div>
+        <div class="item">Help peoplg a README.</div>
+        <div class="item">Help people i by adding a README.</div>
+    </div>
+
+    <p>between</p>
+
+    <div class="container center between">
+        <div class="item">Help people interested in this repository understand your project by adding a README.</div>
+        <div class="item">Help people interested in this repository understand your </div>
+        <div class="item">Help people interested inadding a README.</div>
+        <div class="item">Help peop</div>
+        <div class="item">Help people nd your project by adding a README.</div>
+        <div class="item">Help peoplg a README.</div>
+        <div class="item">Help people i by adding a README.</div>
+    </div>
+    
+</body>
+</html>
