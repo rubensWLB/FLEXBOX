@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundamentos - align self</title>
+
+    <style>
+
+        .flex-container{
+            max-width: 350px;
+            border: 1px solid black;
+            margin-bottom: 10px;
+            display: flex;
+        }
+
+        .align-container{
+            align-items: center;
+        }
+
+        .direction{
+            flex-direction: column;
+        }
+
+        .itens{
+            background-color: brown;
+            color: white;
+            font-size: 24px;
+            text-align: center;
+            margin: 5px;
+        }
+
+        .center{
+            align-self: center;
+        }
+
+        .start{
+            align-self: flex-start;
+        }
+
+        .end{
+            align-self: flex-end;
+        }
+
+        .baseline{
+            align-self: baseline;
+        }
+
+        .stretch{
+            align-self: stretch;
+        }
+
+        .auto{
+            align-self: auto;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>row</h1>
+    <div class="flex-container align-container">
+        <div class="itens auto">AAA</div>
+        <div class="itens auto">123</div>
+        <div class="itens auto">Posicionando elementos com Flexbox em CSS</div>
+        <div class="itens auto">ITEM 4</div>
+    </div>
+
+    <div class="flex-container">
+        <div class="itens center">AAA</div>
+        <div class="itens auto">123</div>
+        <div class="itens stretch">Posicionando elementos com Flexbox em CSS</div>
+        <div class="itens end">ITEM 4</div>
+    </div>
+
+    <div class="flex-container">
+        <div class="itens center">AAA</div>
+        <div class="itens start">123</div>
+        <div class="itens end">ITEM</div>
+        <div class="itens stretch">Posicionandoooooooooooelementos com Flexbox em CSS</div>
+    </div>
+
+    <h1>column</h1>
+    <div class="flex-container align-container direction">
+        <div class="itens end">AAA</div>
+        <div class="itens end">123</div>
+        <div class="itens auto">Posicionando elementos com Flexbox em CSS</div>
+        <div class="itens auto">ITEM 4</div>
+    </div>
+
+    <div class="flex-container direction">
+        <div class="itens center">AAA</div>
+        <div class="itens start">123</div>
+        <div class="itens stretch">Posicionando elementos com Flexbox em CSS</div>
+        <div class="itens end">ITEM 4</div>
+    </div>
+
+    <div class="flex-container direction">
+        <div class="itens center">AAA</div>
+        <div class="itens start">123</div>
+        <div class="itens end">ITEM</div>
+        <div class="itens stretch">Posicionandoooooooooooelementos com Flexbox em CSS</div>
+    </div>
+
+</body>
+</html>
